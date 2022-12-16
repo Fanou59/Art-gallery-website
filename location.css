@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 375px;
+
+}
+
+.img-header {
+    background-image: url(assets/mobile/image-map.png);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+main {
+    height: 493px;
+    color: white;
+    background-color: black;
+    padding-left: 16px;
+    padding-right: 16px;
+
+
+
+}
+
+footer {
+    background-color: #D5966C;
+    color: black;
+    width: 100%;
+    height: 336px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 311px;
+    height: 240px;
+}
+
+
+.logolight {
+    content: url(assets/logo-dark.svg);
+    margin-bottom: 38px;
+}
+
+
+footer {
+    font-family: "Outfit";
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 38px;
+}
+
+.logorsn {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+
+}
+
+
+
+h2 {
+    font-family: "Big shoulders Display";
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 48px;
+
+}
+
+h3 {
+    font-family: "Big shoulders Display";
+    font-size: 32px;
+    line-height: 32px;
+    color: #D5966C;
+    text-transform: uppercase;
+}
+
+.adresse,
+.p-main {
+    font-family: "Outfit";
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+    margin-top: 20px;
+    width: 343px;
+}
+
+
+.button {
+
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 72px;
+    width: 274px;
+    background: linear-gradient(to left, #151515 80%, #D5966C 20%);
+
+}
+
+.button:hover {
+    background: linear-gradient(to left, #D5966C 80%, #151515 20%);
+
+}
+
+a {
+    font-family: "Big shoulders Display";
+    font-size: 20px;
+    letter-spacing: 3.64px;
+    text-transform: uppercase;
+    width: 204px;
+    text-decoration: none;
+    color: white;
+    padding: 24px 0 0 32px;
+}
+
+
+.fleche {
+    display: flex;
+    width: 56px;
+    background-image: url(assets/icon-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}

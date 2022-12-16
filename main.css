@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.img-header {
+    background-image: url(assets/mobile/image-hero.jpg);
+    min-height: 240px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header>p {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+header>h1 {
+    padding-left: 16px;
+}
+
+.button {
+
+    display: flex;
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-bottom: 120px;
+    height: 72px;
+    width: 274px;
+    background: linear-gradient(to right, #151515 80%, #D5966C 20%);
+
+}
+
+.button:hover {
+    background: linear-gradient(to right, #D5966C 80%, #151515 20%);
+
+}
+
+a {
+    font-family: "Big shoulders Display";
+    font-size: 20px;
+    letter-spacing: 3.64px;
+    text-transform: uppercase;
+    width: 204px;
+    text-decoration: none;
+    color: white;
+    padding: 24px 0 0 32px;
+}
+
+
+.fleche {
+
+    width: 56px;
+    background-image: url(assets/icon-arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-family: "Big shoulders Display";
+    font-size: 60px;
+    line-height: 55px;
+
+
+}
+
+h2 {
+    font-family: "Big shoulders Display";
+    font-size: 50px;
+    line-height: 45px;
+}
+
+p {
+    font-family: "Outfit";
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+}
+
+main {
+    width: 343px;
+}
+
+main>p {
+    margin-bottom: 32px;
+}
+
+.img-main {
+    background-image: url(assets/mobile/image-grid-1.jpg);
+    height: 320px;
+    padding: 0;
+}
+
+.img-main2 {
+    background-image: url(assets/mobile/image-grid-2.jpg);
+    height: 480px;
+    margin-bottom: 16px;
+}
+
+.img-main3 {
+    background-image: url(assets/mobile/image-grid-3.jpg);
+    height: 200px;
+    margin-bottom: 16px;
+}
+
+.black-main {
+    color: white;
+    height: 293px;
+    background-color: black;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.black-main>h2 {
+    text-transform: uppercase;
+    margin: 0;
+
+}
+
+footer {
+    margin-top: 120px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 336px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 311px;
+    height: 240px;
+}
+
+.logolight {
+    content: url(assets/logo-light.svg);
+    margin-bottom: 38px;
+}
+
+
+footer p {
+    font-family: "Outfit";
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 38px;
+}
+
+.logorsn {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+
+}
