@@ -2,35 +2,61 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-width: 375px;
+    width: 1439px;
+}
+
+header {
+    width: 1275px;
+    height: 799px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 180px;
+}
+
+.header-title {
+    width: 450px;
+    background-color: black;
 }
 
 
 .img-header {
-    background-image: url(assets/mobile/image-hero.jpg);
-    min-height: 240px;
+    background-image: url(assets/desktop/image-hero.jpg);
+    width: 540px;
+    height: 800px;
     background-repeat: no-repeat;
-    background-position: center;
-}
-
-header>p {
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
 header>h1 {
-    padding-left: 16px;
+    margin: 0;
+    position: absolute;
+    top: 189px;
+    left: 165px;
+    color: white;
+    font-size: 96px;
+    line-height: 88px;
+    font-family: "Big Shoulders Display";
+    width: 514px;
+    height: 176px;
+    text-transform: uppercase;
+
+}
+
+.header-txt {
+    position: absolute;
+    left: 925px;
+    top: 190px;
+    width: 350px;
+    font-family: "Outfit";
+    font-size: 22px;
+    line-height: 32px;
+    margin: 0;
 }
 
 .button {
 
     display: flex;
-    margin-top: 32px;
-    margin-left: 16px;
-    margin-bottom: 120px;
+    position: absolute;
+    top: 414px;
+    left: 925px;
     height: 72px;
     width: 274px;
     background: linear-gradient(to right, #151515 80%, #D5966C 20%);
@@ -62,18 +88,12 @@ a {
     background-position: center;
 }
 
-h1 {
-    font-family: "Big shoulders Display";
-    font-size: 60px;
-    line-height: 55px;
-
-
-}
 
 h2 {
     font-family: "Big shoulders Display";
-    font-size: 50px;
-    line-height: 45px;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
 }
 
 p {
@@ -84,51 +104,96 @@ p {
 }
 
 main {
-    width: 343px;
+
+    width: 1110px;
+    height: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* gap: 30px 0px;  */
+    grid-template-areas:
+        "txt1 img1 img1"
+        "img2 img2 img3"
+        "img2 img2 txt2";
 }
 
-main>p {
+.txt1 {
+    grid-area: txt1;
+    justify-self: center;
+    align-self: center;
+    width: 350px;
+    height: 280px;
+
+}
+
+.txt1 h2 {
+    text-transform: uppercase;
     margin-bottom: 32px;
 }
 
-.img-main {
-    background-image: url(assets/mobile/image-grid-1.jpg);
-    height: 320px;
-    padding: 0;
+.txt1 p {
+    font-size: 22px;
+    line-height: 32px;
+
 }
 
-.img-main2 {
-    background-image: url(assets/mobile/image-grid-2.jpg);
-    height: 480px;
-    margin-bottom: 16px;
+.img1 {
+    grid-area: img1;
+    background-image: url(assets/desktop/image-grid-1.jpg);
+    width: 625px;
+    height: 400px;
+    justify-self: end;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+
+
 }
 
-.img-main3 {
-    background-image: url(assets/mobile/image-grid-3.jpg);
-    height: 200px;
-    margin-bottom: 16px;
+.img2 {
+    grid-area: img2;
+    background-image: url(assets/desktop/image-grid-2.jpg);
+    width: 625px;
+
 }
 
-.black-main {
-    color: white;
-    height: 293px;
-    background-color: black;
-    padding-left: 16px;
-    padding-right: 16px;
+.img3 {
+    grid-area: img3;
+    background-image: url(assets/desktop/image-grid-3.jpg);
+    width: 445px;
+    height: 313px;
+
+}
+
+.txt2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    grid-area: txt2;
+    background-color: #151515;
+    color: white;
+    width: 445px;
+    height: 377px;
+}
+
+.txt2 h2 {
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    width: 350px;
 
 }
 
-.black-main>h2 {
-    text-transform: uppercase;
-    margin: 0;
-
+.txt2 p {
+    font-size: 22px;
+    line-height: 32px;
+    width: 350px;
 }
 
 footer {
-    margin-top: 120px;
+    margin-top: 180px;
     background-color: black;
     color: white;
     width: 100%;
@@ -139,26 +204,30 @@ footer {
 }
 
 .footer-content {
-    width: 311px;
-    height: 240px;
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+    height: 84px;
+
 }
 
 .logolight {
     content: url(assets/logo-light.svg);
-    margin-bottom: 38px;
+    height: 58px;
 }
 
 
-footer p {
+.txt-footer {
     font-family: "Outfit";
     font-size: 16px;
     line-height: 26px;
-    margin-bottom: 38px;
+    width: 430px;
 }
 
 .logorsn {
     display: flex;
     width: 100px;
+    height: 20px;
     justify-content: space-between;
 
 }
