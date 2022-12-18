@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     min-width: 1439px;
+
 }
 
 header {
@@ -10,11 +11,15 @@ header {
     height: 799px;
     display: flex;
     margin-bottom: 180px;
+
 }
 
 .header-title {
+
     width: 450px;
     background-color: black;
+
+
 }
 
 
@@ -23,9 +28,10 @@ header {
     width: 540px;
     height: 800px;
     background-repeat: no-repeat;
+
 }
 
-header>h1 {
+.header-title h1 {
     margin: 0;
     position: absolute;
     top: 189px;
@@ -37,6 +43,10 @@ header>h1 {
     width: 514px;
     height: 176px;
     text-transform: uppercase;
+    mix-blend-mode: difference;
+
+
+
 
 }
 
@@ -94,14 +104,17 @@ h2 {
     font-size: 60px;
     line-height: 60px;
     margin: 0;
+    text-transform: uppercase;
 }
 
 p {
     font-family: "Outfit";
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 32px;
     margin: 0;
 }
+
+/* main section */
 
 main {
 
@@ -113,7 +126,6 @@ main {
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    /* gap: 30px 0px;  */
     grid-template-areas:
         "txt1 img1 img1"
         "img2 img2 img3"
@@ -130,15 +142,9 @@ main {
 }
 
 .txt1 h2 {
-    text-transform: uppercase;
     margin-bottom: 32px;
 }
 
-.txt1 p {
-    font-size: 22px;
-    line-height: 32px;
-
-}
 
 .img1 {
     grid-area: img1;
@@ -180,18 +186,17 @@ main {
 }
 
 .txt2 h2 {
-    text-transform: uppercase;
     margin-bottom: 32px;
     width: 350px;
 
 }
 
 .txt2 p {
-    font-size: 22px;
-    line-height: 32px;
+
     width: 350px;
 }
 
+/* footer section */
 footer {
     margin-top: 180px;
     background-color: black;
