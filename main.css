@@ -354,7 +354,8 @@ footer {
     }
 }
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:414px) {
+
     body {
         width: 375px;
         display: flex;
@@ -465,6 +466,7 @@ footer {
 
     footer {
         height: 345px;
+
 
     }
 
