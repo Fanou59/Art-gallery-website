@@ -5,6 +5,15 @@ body {
 
 }
 
+a,
+h1,
+h2,
+h3 {
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+}
+
+
 .img-header {
     background-image: url(assets/desktop/image-map.png);
     height: 550px;
@@ -31,10 +40,8 @@ body {
 }
 
 a {
-    font-family: "Big shoulders Display";
     font-size: 20px;
     letter-spacing: 3.64px;
-    text-transform: uppercase;
     width: 204px;
     text-decoration: none;
     color: white;
@@ -60,8 +67,6 @@ main {
 }
 
 h2 {
-    font-family: "Big shoulders Display";
-    text-transform: uppercase;
     margin: 0;
     padding: 0;
     font-size: 70px;
@@ -85,10 +90,6 @@ h2 {
     margin-top: 20px;
     width: 343px;
 }
-
-
-
-
 
 footer {
     background-color: #D5966C;
@@ -138,11 +139,9 @@ footer {
 }
 
 h3 {
-    font-family: "Big shoulders Display";
     font-size: 32px;
     line-height: 32px;
     color: #D5966C;
-    text-transform: uppercase;
     margin: 0;
 
 }
@@ -204,6 +203,7 @@ h3 {
     main {
         flex-direction: column;
         height: auto;
+        align-items: center;
     }
 
     .main-txt {
@@ -227,14 +227,17 @@ h3 {
 
     }
 
+    .logolight,
+    .txt-footer {
+        margin-bottom: 16px;
+    }
+
     .logolight {
         width: 110px;
-        margin-bottom: 16px;
     }
 
     .txt-footer {
         width: 100%;
-        margin-bottom: 16px;
 
     }
 
