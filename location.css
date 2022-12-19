@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 1440px;
 
@@ -16,7 +16,7 @@ body {
 .button {
 
     display: flex;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 165px;
     height: 72px;
@@ -129,9 +129,13 @@ footer {
 
 }
 
+.logorsn path {
+    fill: black;
+}
 
-
-
+.logorsn path:hover {
+    fill: white;
+}
 
 h3 {
     font-family: "Big shoulders Display";
@@ -141,4 +145,100 @@ h3 {
     text-transform: uppercase;
     margin: 0;
 
+}
+
+@media only screen and (max-width:768px) {
+    body {
+        width: 768px;
+    }
+
+    .img-header {
+        background-image: url(assets/tablet/image-map.png);
+    }
+
+    footer {
+        height: 216px;
+
+    }
+
+    .footer-content {
+        width: 689px;
+        justify-content: space-around
+    }
+
+    .logolight {
+        height: 40px;
+    }
+
+    .txt-footer {
+        width: 281px;
+    }
+
+    .logorsn {
+
+        width: 100px;
+    }
+
+}
+
+@media only screen and (max-width:375px) {
+    body {
+        width: 375px;
+    }
+
+    h2 {
+        font-size: 50px;
+        line-height: 45px;
+        padding-top: 48px;
+    }
+
+    .img-header {
+        background-image: url(assets/mobile/image-map.png);
+    }
+
+    .button {
+        top: 0;
+        left: 0;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main-txt {
+        padding-top: 0;
+    }
+
+    .p-main {
+        margin-bottom: 56px;
+    }
+
+
+    footer {
+        height: 345px;
+
+    }
+
+    .footer-content {
+        flex-direction: column;
+        width: 311px;
+
+
+    }
+
+    .logolight {
+        width: 110px;
+        margin-bottom: 16px;
+    }
+
+    .txt-footer {
+        width: 100%;
+        margin-bottom: 16px;
+
+    }
+
+    .logorsn a {
+        padding: 0;
+    }
 }

@@ -2,32 +2,19 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-width: 1439px;
-
 }
 
 header {
 
-    height: 799px;
-    display: flex;
+    height: 800px;
     margin-bottom: 180px;
-
 }
 
 .header-title {
 
-    width: 450px;
+    width: 990px;
+    height: 100%;
     background-color: black;
-
-
-}
-
-
-.img-header {
-    background-image: url(assets/desktop/image-hero.jpg);
-    width: 540px;
-    height: 800px;
-    background-repeat: no-repeat;
 
 }
 
@@ -44,11 +31,20 @@ header {
     height: 176px;
     text-transform: uppercase;
     mix-blend-mode: difference;
+}
 
 
+.img-header {
+    float: right;
+    background-image: url(assets/desktop/image-hero.jpg);
+    width: 540px;
+    height: 800px;
+    background-repeat: no-repeat;
 
 
 }
+
+
 
 .header-txt {
     position: absolute;
@@ -112,6 +108,7 @@ p {
     font-size: 22px;
     line-height: 32px;
     margin: 0;
+    color: #444444;
 }
 
 /* main section */
@@ -138,6 +135,8 @@ main {
     align-self: center;
     width: 350px;
     height: 280px;
+
+
 
 }
 
@@ -168,6 +167,7 @@ main {
 .img3 {
     grid-area: img3;
     background-image: url(assets/desktop/image-grid-3.jpg);
+    background-repeat: no-repeat;
     width: 445px;
     height: 313px;
 
@@ -194,6 +194,7 @@ main {
 .txt2 p {
 
     width: 350px;
+    color: white;
 }
 
 /* footer section */
@@ -222,6 +223,7 @@ footer {
 }
 
 
+
 .txt-footer {
     font-family: "Outfit";
     font-size: 16px;
@@ -232,7 +234,256 @@ footer {
 .logorsn {
     display: flex;
     width: 100px;
-    height: 20px;
+    /* height: 20px; */
     justify-content: space-between;
 
+
+}
+
+.logorsn path:hover {
+    fill: #D5966C;
+}
+
+/* Format tablet 768px */
+@media only screen and (max-width:768px) {
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    h2 {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    header {
+        height: 700px;
+    }
+
+    .header-title {
+        width: 437px;
+    }
+
+    .img-header {
+        background-image: url(assets/tablet/image-hero.jpg);
+        float: none;
+
+    }
+
+    .button {
+        top: 483px;
+        left: 389px;
+    }
+
+    .header-txt {
+        top: 323px;
+        left: 389px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .header-title h1 {
+        color: black;
+        top: 145px;
+        left: 389px;
+        mix-blend-mode: normal;
+        font-size: 70px;
+        line-height: 65px;
+
+    }
+
+    main {
+        width: 689px;
+        height: 1131px;
+    }
+
+    .txt1 {
+        width: 223px;
+        justify-self: normal;
+        padding-bottom: 76px;
+
+    }
+
+    .img1 {
+        background-image: url(assets/tablet/image-grid-1.jpg);
+        width: 398px;
+        padding-bottom: 11px;
+    }
+
+    .img2 {
+        width: 398px;
+        background-image: url(assets/tablet/image-grid-2.jpg);
+
+    }
+
+    .img3 {
+        width: 280px;
+        background-image: url(assets/tablet/image-grid-3.jpg);
+    }
+
+    .txt2 {
+        width: 280px;
+    }
+
+    .txt2 h2 {
+        width: 223px;
+        margin-bottom: 24px;
+    }
+
+    .txt2 p {
+        width: 223px;
+        color: white;
+        font-size: 18px;
+    }
+
+    footer {
+        height: 216px;
+
+    }
+
+    .footer-content {
+        width: 689px;
+        justify-content: space-around
+    }
+
+    .logolight {
+        height: 40px;
+    }
+
+    .txt-footer {
+        width: 281px;
+    }
+
+    .logorsn {
+
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    body {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+
+    .header-title {
+        width: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        background-color: white;
+
+    }
+
+    .header-title h1,
+    .header-txt,
+    .button {
+        margin-left: 16px;
+    }
+
+    h2 {
+        font-size: 50px;
+        line-height: 45px;
+
+    }
+
+    .header-title h1 {
+        height: 240px;
+        position: initial;
+        font-size: 50px;
+        line-height: 45px;
+        height: auto;
+    }
+
+    .img-header {
+        background-image: url(assets/mobile/image-hero.jpg);
+        height: 240px;
+        width: 375px;
+
+    }
+
+    .header-txt {
+        position: initial;
+
+    }
+
+    .button {
+        position: initial;
+    }
+
+    main {
+        width: 343px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .img1 {
+        background-image: url(assets/mobile/image-grid-1.jpg);
+        width: 100%;
+
+
+
+    }
+
+    .txt1 {
+        margin: 0;
+        padding: 0;
+        align-self: flex-start;
+        width: 100%;
+
+    }
+
+    .img2 {
+        background-image: url(assets/mobile/image-grid-2.jpg);
+        height: 480px;
+        width: 100%;
+        margin-bottom: 16px
+    }
+
+    .img3 {
+        background-image: url(assets/mobile/image-grid-3.jpg);
+
+        width: 100%;
+        height: 200px;
+        margin-bottom: 16px;
+    }
+
+    .txt2 {
+        height: 293px;
+        width: 100%;
+    }
+
+    footer {
+        height: 345px;
+
+    }
+
+    .footer-content {
+        flex-direction: column;
+        width: 311px;
+
+
+    }
+
+    .logolight {
+        width: 110px;
+        margin-bottom: 16px;
+    }
+
+    .txt-footer {
+        width: 100%;
+        margin-bottom: 16px;
+
+    }
+
+    .logorsn a {
+        padding: 0;
+    }
 }
