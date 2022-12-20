@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* width: 1440px; */
 }
 
 h1,
@@ -203,6 +204,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .footer-content {
@@ -238,7 +240,7 @@ footer {
 }
 
 /* Format tablet 768px */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1267px) {
     p {
         font-size: 18px;
         line-height: 28px;
@@ -354,7 +356,7 @@ footer {
     }
 }
 
-@media only screen and (max-width:414px) {
+@media only screen and (max-width:728px) {
 
     body {
         width: 375px;
