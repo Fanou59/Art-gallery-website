@@ -35,7 +35,8 @@ header {
 
     height: 800px;
     margin-bottom: 180px;
-    width: 990px;
+    max-width: 990px;
+    width: 70%;
     background-color: black;
 }
 
